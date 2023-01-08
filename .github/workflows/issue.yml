@@ -4,7 +4,7 @@ on:
     types: opened
 jobs:
   issue-context:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Echo issue content
-      run: echo '${{ toJSON(github) }}'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo issue content
+        run: echo '${{ toJSON(github) }}'
